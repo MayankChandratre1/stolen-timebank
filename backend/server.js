@@ -33,6 +33,7 @@ app.use((req, res) => {
   console.log(`Route not found: ${req.method} ${req.url}`);
   res.status(404).json({ message: `Route not found: ${req.method} ${req.url}` });
 });
+console.log("Server is getting started...");
 
 // Connect to MongoDB & Start Server
 connectDB();
